@@ -1,0 +1,20 @@
+slidemodecontrol_sfun.obj
+c6_slidemodecontrol.obj
+slidemodecontrol_sfun_registry.obj
+c_mexapi_version.obj
+
+"D:\Program Files\matlab\extern\lib\win64\microsoft\sf_runtime.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmx.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmex.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmat.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libfixedpoint.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libut.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmwmathutil.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libemlrt.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmwsl_log_load_blocks.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmwsimulink.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmwsl_sfcn_cov_bridge.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libcovrt.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmwsl_simtarget_core.lib"
+"D:\Program Files\matlab\extern\lib\win64\microsoft\libmwsl_simtarget_instrumentation.lib"
+"D:\Program Files\matlab\lib\win64\libmwipp.lib"

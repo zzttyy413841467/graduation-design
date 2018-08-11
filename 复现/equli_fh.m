@@ -1,0 +1,19 @@
+function [fh,d_fh]=equli_fh(H,V)
+g0=9.81;
+Re=6378145;
+mu=g0*Re^2;
+g=mu/(Re+H).^2;
+r=Re+H;
+mass=2e4;
+rho0=1.225;
+hs=7320;
+rho=rho0*exp(-H/hs);
+sref=95;
+a1=-0.2074;
+a2=0.029244;
+alpha=Alpha_fun(V);
+CL=a1+a2*alpha;
+L=0.5*rho.*V.^2.*sref.*CL;
+fh=(g-V.^2./r)-L/mass;
+d_fh=-2*mu./r^3+V.^2./r^2+rho.*V.^2*CL*sref./(2*hs*mass);
+end

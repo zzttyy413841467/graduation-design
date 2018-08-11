@@ -1,0 +1,15 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<body>
+<script src="resources/eml_report_loadable_data.js"></script>
+<pre class="code">
+<span class="srcline"><span class="lineno"><a href="1,1" id="srcline1">1</a></span><span class="line"><span class="keyword">function</span> [<span class="var type0" id="S2T0U3">rref</span>,<span class="var type0" id="S3T0U4">thetaref</span>,<span class="var type0" id="S4T0U5">bankref</span>] = fcn(<span class="var type1" id="S5T1U8">V</span>)</span></span>
+<span class="srcline"><span class="lineno"><a href="1,2" id="srcline2">2</a></span><span class="line"></span></span>
+<span class="srcline"><span class="lineno"><a href="1,3" id="srcline3">3</a></span><span class="line"><span class="var type0" id="S6T0U11">solution</span> = <span class="message error" id="M1F1C">output</span>.result.solution;</span></span>
+<span class="srcline"><span class="lineno"><a href="1,4" id="srcline4">4</a></span><span class="line"><span class="var type0" id="S2T0U19">rref</span>=interp1(<span class="var type0" id="S6T0U26"><span class="message error" id="M2F1C">solution</span></span>.phase(1).state(:,4),<span class="var type0" id="S6T0U36">solution</span>.phase(1).state(:,1),<span class="var type0" id="S6T0U46">solution</span>.phase(1).state(:,4),<span class="string">'spline'</span>);</span></span>
+<span class="srcline"><span class="lineno"><a href="1,5" id="srcline5">5</a></span><span class="line"><span class="var type0" id="S3T0U55">thetaref</span>=interp1(<span class="var type0" id="S6T0U62"><span class="message error" id="M3F1C">solution</span></span>.phase(1).state(:,4),<span class="var type0" id="S6T0U72">solution</span>.phase(1).state(:,5),<span class="var type0" id="S6T0U82">solution</span>.phase(1).state(:,4),<span class="string">'spline'</span>);</span></span>
+<span class="srcline"><span class="lineno"><a href="1,6" id="srcline6">6</a></span><span class="line"><span class="var type0" id="S4T0U91">bankref</span>=interp1(<span class="var type0" id="S6T0U98"><span class="message error" id="M4F1C">solution</span></span>.phase(1).state(:,4),<span class="var type0" id="S6T0U108">solution</span>.phase(1).state(:,7),<span class="var type0" id="S6T0U118">solution</span>.phase(1).state(:,4),<span class="string">'spline'</span>);</span></span>
+<span class="srcline"><span class="lineno"><a href="1,7" id="srcline7">7</a></span><span class="line"><span class="keyword">end</span></span></span>
+</pre>
+</body>
+</html>

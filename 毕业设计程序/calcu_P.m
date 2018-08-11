@@ -1,0 +1,19 @@
+function [P]=calcu_P(A,B,R,Q)
+I=eye(size(A));
+iA=inv(I-A);
+E=iA*(I+A);
+G=2*iA^2*B;
+H=R+B'*iA'*Q*iA*B;
+W=Q*iA*B;
+P0=zeros(size(A));
+i=0;
+while(1)
+    i=i+1;
+    P=E'*P0*E-(E'*P0*G+W)*inv(G'*P0*G+H)*(E'*P0*G+W)'+Q;
+    if(norm(P-P0)<eps)
+        break;
+    else
+        P0=P;
+    end
+end
+P=2*iA'*P*iA;

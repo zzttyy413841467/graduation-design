@@ -1,0 +1,10 @@
+vvv1=speed(1:19)*1000;
+vvv2=speed(19:end)*1000;
+hhh1=altitude(1:19)*1000;
+hhh2=altitude(19:end)*1000;
+sp1=csapi(vvv1,hhh1);
+sp2=csapi(vvv2,hhh2);
+dhhh1=fnval(fnder(sp1),vvv1);
+dhhh2=fnval(fnder(sp2),vvv2);
+d2hhh1=fnval(fnder(fnder(sp1)),vvv1);
+d2hhh2=fnval(fnder(fnder(sp2)),vvv2);
